@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <h2>Update Product</h2>
+
+  <!-- Product ID input to fetch the product -->
+  <div class="form-group">
+    <label for="productId">Enter Product ID:</label>
+    <input type="number" id="productId" class="form-control" [(ngModel)]="productId" name="productId" required>
+  </div>
+  <button class="btn btn-primary" (click)="fetchProduct()">Fetch Product</button>
+
+  <!-- Only show this form when the product is fetched -->
+  <div *ngIf="product.id">
+    <hr>
+    <h3>Update Product Details</h3>
+    <form (ngSubmit)="updateProduct()">
+      <div class="form-group">
+        <label for="name">New Product Name:</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="updatedProduct.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="category">New Category:</label>
+        <input type="text" id="category" class="form-control" [(ngModel)]="updatedProduct.category" name="category" required>
+      </div>
+      <div class="form-group">
+        <label for="price">New Price:</label>
+        <input type="number" id="price" class="form-control" [(ngModel)]="updatedProduct.price" name="price" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">New Quantity:</label>
+        <input type="number" id="quantity" class="form-control" [(ngModel)]="updatedProduct.quantity" name="quantity" required>
+      </div>
+      <button type="submit" class="btn btn-success">Update Product</button>
+    </form>
+  </div>
+</div>

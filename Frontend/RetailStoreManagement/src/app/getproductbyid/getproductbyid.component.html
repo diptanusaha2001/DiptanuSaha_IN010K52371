@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <h2>Get Product by ID</h2>
+    <form (ngSubmit)="fetchProductById()">
+      <div class="form-group">
+        <label for="productId">Product ID:</label>
+        <input type="text" id="productId" class="form-control" [(ngModel)]="productId" name="productId" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Get Product</button>
+    </form>
+  
+    <div *ngIf="product">
+      <h3>Product Details</h3>
+      <p><strong>ID:</strong> {{product.id}}</p>
+      <p><strong>Name:</strong> {{product.name}}</p>
+      <p><strong>Category:</strong> {{product.category}}</p>
+      <p><strong>Price:</strong> {{product.price}}</p>
+      <p><strong>Quantity:</strong> {{product.quantity}}</p>
+    </div>
+  </div>
+  

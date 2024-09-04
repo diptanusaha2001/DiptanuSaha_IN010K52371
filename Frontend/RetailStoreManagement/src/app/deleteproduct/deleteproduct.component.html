@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h2>Delete Product</h2>
+  <form (ngSubmit)="deleteProduct()">
+    <div class="form-group">
+      <label for="id">Product ID:</label>
+      <input type="number" id="id" class="form-control" [(ngModel)]="productId" name="id" required>
+    </div>
+    <button type="submit" class="btn btn-danger">Delete Product</button>
+  </form>
+</div>

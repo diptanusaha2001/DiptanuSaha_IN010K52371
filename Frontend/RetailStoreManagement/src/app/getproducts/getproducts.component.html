@@ -1,0 +1,45 @@
+<style>
+  .table-container {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  .table th, .table td {
+    text-align: center;
+  }
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  .currency {
+    display: inline-block;
+  }
+</style>
+<body>
+
+<div class="container table-container">
+  <h2 class="text-center mb-4">Product List</h2>
+  <table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of products">
+        <td>{{prod.id}}</td>
+        <td>{{prod.name}}</td>
+        <td>{{prod.category}}</td>
+        <td>{{prod.price | currency:'INR':true}}</td>
+        <td>{{prod.quantity}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
