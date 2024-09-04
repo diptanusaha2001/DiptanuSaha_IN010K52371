@@ -36,17 +36,20 @@ To run the project locally, clone the repository and follow these steps:
    - Install the dependencies using `npm install`.
    - Start the Angular application using `ng serve`.
 
-### License
-
-This project is licensed under the MIT License.
-
----
+### Screenshots of the WebPage
 ![Home Page](https://github.com/user-attachments/assets/92336602-97c5-4f77-9a41-4d5089327997)
 ![Add New Product Page](https://github.com/user-attachments/assets/6898abcc-c5a4-48a1-beca-dcaf03ded9e4)
 ![Get All Products Page](https://github.com/user-attachments/assets/53eb7465-d1bf-495a-9e2e-20fb5f24860a)
 ![Get Product by Id Page](https://github.com/user-attachments/assets/bf689b10-4f29-430c-b377-876745f96110)
 ![Update Product Page](https://github.com/user-attachments/assets/afc294f1-aca6-4b79-8170-7702397e8369)
 ![Delete Product Page](https://github.com/user-attachments/assets/8ee09ed3-ff4a-4d42-9f45-ff9a1b2f9c7e)
+
+### License
+
+This project is licensed under the MIT License.
+
+---
+
 
 
 
